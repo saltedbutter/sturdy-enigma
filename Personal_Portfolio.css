@@ -1,0 +1,205 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Tammudu');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+
+html {
+	text-align: center;
+	font-family: Ubuntu Mono, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	background-color: rgba(222, 250, 199, 1);
+	overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+/*--------------------
+        NAVBAR
+---------------------*/
+#navbar{
+	position: fixed;
+	top:0;
+	width: 100%;
+	height:60px;
+	background-color: rgba(222, 250, 199, 1);
+}
+	#navbar ul{
+		text-align: right;
+	}
+	#navbar li{
+		display: inline-block;
+	}
+	#navbar li a{
+		display: inline-block;
+		float: right;
+		text-decoration: none;
+		color: rgba(14, 136, 149, 1);
+		font-size: 20px;
+		font-weight: bold;
+		padding: 20px 60px;
+	}
+	#navbar a:hover{
+		color:#111;
+	}
+/*-------------------------
+         WELCOME
+--------------------------*/
+#welcome-section{
+	top:0;
+	width:100vw;
+	min-height: 65vh;
+	padding-top: 45vh;
+}
+	#welcome-section h1{
+		font-family: Baloo Tammudu, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+		font-size: 40px;
+	}
+	#welcome-section h2{
+		font-family: Swanky and Moo Moo, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+		font-size:30px;
+		color:rgba(14, 136, 149, 1);
+	}
+/*------------------------
+           BIO
+-------------------------*/
+.collapsible {
+    background-color: rgba(222, 250, 199, 1);
+    color: rgba(14, 136, 149, 1);
+    font-family: Swanky and Moo Moo, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    cursor: pointer;
+    padding: 18px;
+    width: 300px;
+    border: none;
+    text-align:center;
+    outline: none;
+    font-size: 15px;
+}
+	.active, .collapsible:hover {
+  		background-color: #111;
+	}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: aliceblue;
+}
+	.content p{
+		font-family:Baloo Tammudu, Ubuntu Mono, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+		font-size:25px;
+		color:rgba(14, 136, 149, 1);
+		line-height: 50px;
+		font-weight:none;
+	}
+/*--------------------
+      Projects
+---------------------*/
+
+#projects{
+	width:100vw;
+	background-color: aliceblue;
+	padding-top: 60px;
+  	margin-top: -60px;
+}
+
+.project-heading{
+	
+	font-size: 40px;
+	padding: 20px 0px 60px;
+}
+
+.project-tile{
+	display: inline-block;
+	overflow: hidden;
+	width:300px;
+	height:300px;
+	border: solid;
+	border-width: 3px;
+	border-color: #111;
+	margin: 30px 60px;
+}
+.project-tile a{
+	text-decoration: none;
+	color: rgba(14, 136, 149, 1);
+	font-size: 20px;
+}
+	.project-tile:hover{
+		border-color:rgba(14, 136, 149, 1);		
+	}
+.project-tile a:hover{
+		color: #111;	
+	}
+.project-img{
+	width:300px;
+	height: 270px;
+}
+/*---------------------
+       CONTACT
+----------------------*/
+#contact{
+	height: 100%;
+	background-color: #C9DDED;
+	min-height: 50vh;
+}
+	#contact::after{
+		content: "";
+		clear:both;
+	}
+	#contact h4{
+		font-size: 28px;
+		padding-top: 50px;
+	}
+	#contact p{
+		color: rgba(14, 136, 149, 1);
+		font-family: Swanky and Moo Moo, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"; 
+		font-size:30px;
+		padding-bottom: 50px;
+	}
+.links{
+	clear: both;
+	display: inline-block;
+}
+	.links a {
+		padding: 0px 30px;
+	}
+.contact-img{
+	width:100px;
+}
+	.contact-img:hover{
+		width: 150px;
+	}
+/*-------------------------
+           Footer
+--------------------------*/
+footer{
+	background-color: #C9DDED;
+}
+/*-------------------------
+       Media Querys
+--------------------------*/
+@media (max-width:1200px){
+	#welcome-section{
+		height:auto;
+	}
+	#navbar{
+		float: left;
+	}
+}
+@media (max-width:600px){
+	.contact-img{
+		max-width: 80px;
+	}
+	#navbar{
+		position: relative;
+	}
+	#navbar ul{
+		text-align: left;
+	}
+	#navbar li a{
+		float:left;
+		padding: 10px;
+	}
+	.content p{
+		font-size: 12px;
+	}
+}

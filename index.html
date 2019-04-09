@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Personal_Portfolio</title>
+		<link href="css/Personal_Portfolio.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<header>
+		<nav id="navbar">
+			<ul>
+				<li><a href="#welcome-section">About</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<body>
+	
+		<section id="welcome-section">
+			<h1>Hey, I am butters</h1>
+			<h2>A Web Developer</h2>
+			<button class="collapsible">Read more</button>
+			<div class="content">
+  				<p>Hi. I create websites; small to big, simple to advanced, basic to power hungry.<br>Have a look at some of my projects below. <a id="profile-link" href="https://www.freecodecamp.org/butters" target="_blank">Click here</a> to see my learning experience with website development.<br>Reach out to me under any platform you wish and let's work together. </p>
+			</div>
+		<script>
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+				coll[i].addEventListener("click", function() {
+					this.classList.toggle("active");
+					var content = this.nextElementSibling;
+					if (content.style.display === "block") {
+						content.style.display = "none";
+					} else {
+						content.style.display = "block";
+					}
+				});
+			}
+		</script>
+	</section>
+		
+	<section id="projects">
+		<div id="project-heading">
+			<h2 class="project-heading">Take a look at some of my work...</h2>
+			<div id="project-1" class="project-tile">
+				<a href="https://codepen.io/saltedbutter/full/XOyYGE" target="_blank"><img class="project-img" src="https://farm8.staticflickr.com/7845/32267672717_f12b918a7e.jpg" alt="A Tribute"/>A Tribute</a>
+			</div>
+			<div id="project-2" class="project-tile">
+				<a href="https://codepen.io/saltedbutter/full/PVxrdp" target="_blank"><img class="project-img" src="https://farm8.staticflickr.com/7826/40253796073_4fc917ba5f.jpg" alt="Survey"/>Survey Form</a>
+			</div>
+			<div id="project-3" class="project-tile">
+				<a href="https://codepen.io/saltedbutter/full/BMXexL" target="_blank"><img class="project-img" src="https://farm8.staticflickr.com/7898/32276577907_0982dd5a5d.jpg" alt="Technical Documentation" />Technical Documentation</a>
+			</div>
+			<div id="project-4" class="project-tile">
+				<a href="https://codepen.io/saltedbutter/full/rRBQyP" target="_blank"><img class="project-img" src="https://farm8.staticflickr.com/7866/32276578187_c056680d49.jpg" alt="Product Landing" />Product Landing</a>
+			</div>
+			<div id="project-5" class="project-tile">
+				<a href="https://codepen.io/saltedbutter/full/GegEvp" target="_blank"><img class="project-img" src="https://farm8.staticflickr.com/7899/46495793874_6349f7215a.jpg" alt="JavaScript Calendar" />JavaScript Calendar</a>
+			</div>
+			<div id="project-6" class="project-tile">
+				<a href="https://codepen.io/saltedbutter/full/VRYWpo" target="_blank"><img class="project-img" src="https://farm8.staticflickr.com/7895/46495809614_56125a23bf.jpg" alt="Quote of the day" />Quote of the day</a>
+			</div>
+			<div id="project-6" class="project-tile">
+				<a href="https://codepen.io/saltedbutter/full/VRYWpo" target="_blank"><img class="project-img" src="https://farm8.staticflickr.com/7895/46495809614_56125a23bf.jpg" alt="Quote of the day" />Quote of the day</a>
+			</div>
+		</div>
+	</section>
+	
+	<div id="contact">
+   		<h4>Let's Work together</h4>
+   		<p>How do you take your coffee?</p>
+   		<div class="links">
+   			<a href="https://www.facebook.com/" target="_blank"><img class="contact-img" src="https://farm8.staticflickr.com/7859/47165032832_e62f3ec8f2.jpg" alt="Contact me via Facebook"/></a>
+			<a href="https://twitter.com" target="_blank"><img class="contact-img" src="https://farm8.staticflickr.com/7847/33341567048_98fea0d45c.jpg" alt="Contact me via Twitter"/></a>
+			<a href="https://www.linkedin.com/in/joshua-taljaard-403808175/" target="_blank"><img class="contact-img" src="https://farm8.staticflickr.com/7919/46302661455_a4202d8ef6.jpg" alt="Contact me via Linked In"/></a>
+			<a href="https://mail.google.com/mail/u/0/" target="_blank"><img class="contact-img" src="https://farm8.staticflickr.com/7924/46302662545_95e16cb9a7.jpg" alt="Contact me via email"/></a>
+			<a href="tel:+27835995564" target="_blank"><img class="contact-img" src="https://farm8.staticflickr.com/7915/46302661295_45f12e648a.jpg" alt="Contact me via Whatsapp"/></a>
+			<a href="tel:+2222222222222" target="_blank"><img class="contact-img" src="https://farm8.staticflickr.com/7845/47165034152_68a1fa2648.jpg" alt="Contact me via phone call"/></a>
+   		</div>
+	</div>
+	<hr>
+  	
+   	<footer>
+    	<div id="thanks">
+    		<p>A big thanks to the following for content used:<a href="#" title="Freepik" target="_blank">Nothing yet</a></p>
+	  	</div>
+   		<p>&copy; Created for FreeCodeCamp.org by Josh(butters)<br>This is a fake website. &emsp;&emsp;&emsp;2019</p>
+   	</footer>
+   	</body>
+	
+</html>
